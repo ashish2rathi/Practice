@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BloggingSite.Models;
+using Newtonsoft.Json;
 
 namespace BloggingSite.Controllers
 {
@@ -12,6 +14,9 @@ namespace BloggingSite.Controllers
     {
         public IActionResult Index()
         {
+            var blogPostsRestClient = new BlogPostsRestClient();
+            var responseData = blogPostsRestClient.FindAll().Result;
+            ViewBag.blogs = JsonConvert.DeserializeObject<List<BlogPostsModel>>(responseData);
             return View();
         }
 

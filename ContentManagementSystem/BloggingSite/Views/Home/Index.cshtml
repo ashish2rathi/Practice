@@ -5,3 +5,30 @@
 <h2>@ViewData["Title"]</h2>
 
 
+<h3>Blog List</h3>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>TopicID</td>
+        <td>Title</td>
+        <td>Content</td>
+        <td>CreatedData</td>
+        <td>PublishedDate</td>
+        <td>Action</td>
+
+    </tr>
+    
+    @foreach (var blog in ViewBag.blogs)
+    {
+    <tr>
+        <td>@blog.ID</td>
+        <td>@blog.TopicID</td>
+        <td>@blog.Title</td>
+        <td>@blog.Content</td>
+        <td>@blog.CreatedDate</td>
+        <td>@blog.PublishedDate</td>
+        <td>Edit | Delete</td>
+
+    </tr>
+    }
+</table>
