@@ -1,0 +1,13 @@
+*.dll
+/BloggingSite.RazorAssemblyInfo.cache
+/BloggingSite.RazorAssemblyInfo.cs
+/BloggingSite.RazorCoreGenerate.cache
+/BloggingSite.RazorTargetAssemblyInfo.cache
+/BloggingSite.RazorTargetAssemblyInfo.cs
+/BloggingSite.TagHelpers.input.cache
+/BloggingSite.TagHelpers.output.cache
+/BloggingSite.Views.pdb
+/BloggingSite.pdb
+*.cs
+/BloggingSite.csproj.FileListAbsolute.txt
+/BloggingSite.csprojAssemblyReference.cache

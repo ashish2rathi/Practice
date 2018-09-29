@@ -1,0 +1,4 @@
+*.g.cshtml.cs
+*.AssemblyInfo.cs
+*.AssemblyInfoInputs.cache
+*.csproj.CoreCompileInputs.cache
